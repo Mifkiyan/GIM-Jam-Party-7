@@ -1,0 +1,119 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1643559246.cfg"
+		},
+		{
+			"action": "join",
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I’ve had the same nightmare for the past two months. It was right after dad’s funeral. I feel like I was stuck in a terrible loop. Red robe, Black Goat’s statue, and the coldness of the ax on my neck."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1643557069.cfg"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Strange things also happened. Knocking sounds, whispers that I don't know where it came from, or the shower suddenly turning on by itself, it keeps bothering me. My brother told me he was experiencing the same thing. He said that he felt he was being watched by something. [i]Something we better don’t know."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1643559246.cfg"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It continued to happen until yesterday. When [i]they[/i] finally showed up. [i]They[/i] led me to my father’s room, the room that no one was allowed to enter. I was clueless. What are [i]they[/i] trying to show me?"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1643557069.cfg"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "My hand unconsciously opened the door. A sudden strange chills ran down through my spine. In that room, I found a notebook. That book looks like it’s been around for decades. I opened the book, read it page by page. Trying to understand what is written in the book. And… what I found really terrified me."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1643559246.cfg"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It looks the same as the one in my dream."
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The altar, the bloody statue, and also people in red robes. There’s no doubt. This book can lead me to the answer I've been searching for. When i’m about to open the last page, a little note fell from the book. There’s something written on it."
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 0.5
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1643560778.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "“DON’T LET CHARON FIND YOU”"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1643559246.cfg"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Charon? Why does it feel like I've heard this word before. I looked around to find another clue. Not long after, I found a document, with the word “Charon” in it. There’s a lot of data about Charon, and also the map. It was… a village."
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That’s when I realized, [i]there’s no going back.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thus, with the help of the documents I found in my father’s room, I went to the village. To find out the truth."
+		},
+		{
+			"change_scene": "res://World.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1643557022.json",
+		"name": "Monologue"
+	}
+}
