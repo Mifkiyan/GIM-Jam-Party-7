@@ -81,7 +81,7 @@ script = ExtResource( 16 )
 [node name="MC" parent="." groups=[
 "MC",
 ] instance=ExtResource( 11 )]
-position = Vector2( 31.6673, 1.45329 )
+position = Vector2( 24.7551, 3.82614 )
 
 [node name="Camera2D" type="Camera2D" parent="MC"]
 current = true
@@ -93,7 +93,7 @@ limit_bottom = 315
 limit_smoothed = true
 
 [node name="AdikMC" parent="." instance=ExtResource( 1 )]
-position = Vector2( 16.1765, 2.94118 )
+position = Vector2( 15.1448, 1.70317 )
 scale = Vector2( 0.981417, 1 )
 
 [node name="BG" type="TileMap" parent="."]
@@ -120,7 +120,6 @@ format = 1
 
 [node name="River" type="StaticBody2D" parent="."]
 position = Vector2( 330.882, 104.608 )
-scale = Vector2( 1, 1 )
 z_index = -1
 
 [node name="Sprite" type="Sprite" parent="River"]
@@ -286,7 +285,6 @@ shape = SubResource( 6 )
 
 [node name="Limit2" type="StaticBody2D" parent="."]
 position = Vector2( -10.4802, 117.534 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -296,7 +294,6 @@ shape = SubResource( 7 )
 
 [node name="Limit3" type="StaticBody2D" parent="."]
 position = Vector2( 148.309, 230.521 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
