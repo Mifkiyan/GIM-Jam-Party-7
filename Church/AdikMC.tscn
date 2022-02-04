@@ -7,7 +7,7 @@
 [ext_resource path="res://Sprites/karakter adik mc/depan 1.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/karakter adik mc/belakang 1.png" type="Texture" id=6]
 [ext_resource path="res://FollowLimit.gd" type="Script" id=7]
-[ext_resource path="res://Village/AdikMC.gd" type="Script" id=8]
+[ext_resource path="res://Church/AdikMC.gd" type="Script" id=8]
 [ext_resource path="res://Sprites/karakter adik mc/samping kiri.png" type="Texture" id=9]
 [ext_resource path="res://Sprites/karakter adik mc/samping kanan.png" type="Texture" id=10]
 [ext_resource path="res://Sprites/karakter adik mc/belakang.png" type="Texture" id=11]
@@ -20,29 +20,14 @@ animations = [ {
 "name": "Kanan diem",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 12 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 4 ) ],
 "loop": true,
-"name": "Kiri",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 11 ) ],
-"loop": true,
-"name": "Belakang diem",
+"name": "Belakang",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ), ExtResource( 1 ) ],
 "loop": true,
 "name": "Depan",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 3 ) ],
-"loop": true,
-"name": "Kanan",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 6 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "Belakang",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 2 ) ],
@@ -53,6 +38,21 @@ animations = [ {
 "frames": [ ExtResource( 9 ) ],
 "loop": true,
 "name": "Kiri diem",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "Belakang diem",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ) ],
+"loop": true,
+"name": "Kiri",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Kanan",
 "speed": 5.0
 } ]
 
@@ -70,7 +70,7 @@ script = ExtResource( 8 )
 position = Vector2( 0, -3.13258 )
 scale = Vector2( 0.150639, 0.150639 )
 frames = SubResource( 1 )
-animation = "Depan diem"
+animation = "Belakang diem"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Village/AdikMC.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Village/House.tscn" type="PackedScene" id=3]
@@ -68,6 +68,12 @@ extents = Vector2( 9.48911, 10.2755 )
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 7.5921, 6.19495 )
 
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 149.494, 10 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 10, 117.363 )
+
 [node name="World" type="YSort"]
 scale = Vector2( 1.36, 1.36 )
 script = ExtResource( 16 )
@@ -75,7 +81,7 @@ script = ExtResource( 16 )
 [node name="MC" parent="." groups=[
 "MC",
 ] instance=ExtResource( 11 )]
-position = Vector2( 22.2874, 4.52203 )
+position = Vector2( 31.6673, 1.45329 )
 
 [node name="Camera2D" type="Camera2D" parent="MC"]
 current = true
@@ -87,12 +93,13 @@ limit_bottom = 315
 limit_smoothed = true
 
 [node name="AdikMC" parent="." instance=ExtResource( 1 )]
-position = Vector2( 12.3646, 2.74843 )
+position = Vector2( 16.1765, 2.94118 )
+scale = Vector2( 0.981417, 1 )
 
 [node name="BG" type="TileMap" parent="."]
-show_behind_parent = true
 position = Vector2( -1, 0 )
 scale = Vector2( 0.5, 0.5 )
+z_index = -2
 tile_set = SubResource( 1 )
 cell_size = Vector2( 32, 32 )
 format = 1
@@ -103,13 +110,26 @@ z_index = 5
 tile_set = SubResource( 2 )
 cell_size = Vector2( 18, 30 )
 format = 1
-tile_data = PoolIntArray( -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0, -65521, 0, 0, 65535, 0, 0, 131071, 0, 0, 196607, 0, 0, 262143, 0, 0, 327679, 0, 0, 393215, 0, 0, 458751, 0, 0, 524287, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 458766, 0, 0 )
+tile_data = PoolIntArray( -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0, -65521, 0, 0, -65520, 0, 0, -65519, 0, 0, 65535, 0, 0, 131071, 0, 0, 196607, 0, 0, 262143, 0, 0, 327679, 0, 0, 393215, 0, 0, 458751, 0, 0, 524287, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 458766, 0, 0, 458767, 0, 0 )
 
 [node name="Pohon Kecil" type="TileMap" parent="."]
 z_index = 5
 tile_set = SubResource( 3 )
 cell_size = Vector2( 15, 26 )
 format = 1
+
+[node name="River" type="StaticBody2D" parent="."]
+position = Vector2( 330.882, 104.608 )
+scale = Vector2( 1, 1 )
+z_index = -1
+
+[node name="Sprite" type="Sprite" parent="River"]
+position = Vector2( -6.10352e-05, -2.28882e-05 )
+scale = Vector2( 5.06284, 8.52825 )
+texture = ExtResource( 10 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="River"]
+polygon = PoolVector2Array( 2.48196, -104.792, 2.51962, -100.018, 6.20029, -98.6681, 6.17053, -75.666, 11.0523, -73.7073, 11.1416, -20.1367, 4.71466, -17.0206, 5.88321, 29.7204, 6.29407, 56.012, 0.451447, 58.3491, -0.522339, 65.3602, -4.80692, 68.2815, -5.3912, 74.3189, -10.4548, 77.8245, -10.1431, 91.5989, -15.5799, 93.7982, -16.6511, 99.6408, -23.6622, 107.334, -32.913, 116, -33.0209, 122.307, 37.8792, 122.69, 37.8115, -105.215 )
 
 [node name="Church" type="StaticBody2D" parent="."]
 position = Vector2( 206.493, 103.151 )
@@ -126,11 +146,6 @@ texture = ExtResource( 4 )
 position = Vector2( 0, 6.66295 )
 scale = Vector2( 2.06826, 2.06826 )
 shape = SubResource( 4 )
-
-[node name="River" type="Sprite" parent="."]
-position = Vector2( 330.882, 104.608 )
-scale = Vector2( 5.06284, 8.52825 )
-texture = ExtResource( 10 )
 
 [node name="House" parent="." instance=ExtResource( 3 )]
 position = Vector2( 115.091, 59.159 )
@@ -234,15 +249,15 @@ position = Vector2( 205.216, 169.503 )
 scale = Vector2( 0.652174, 0.750006 )
 
 [node name="Tombstone1" parent="." instance=ExtResource( 6 )]
-position = Vector2( 42.6342, 61.5788 )
+position = Vector2( 45.5882, 146.324 )
 scale = Vector2( 0.176471, 0.176471 )
 
 [node name="Tombstone2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 50.9692, 67.6014 )
+position = Vector2( 52.2059, 153.676 )
 scale = Vector2( 0.176471, 0.176471 )
 
 [node name="Tombstone3" parent="." instance=ExtResource( 7 )]
-position = Vector2( 57.5401, 61.1964 )
+position = Vector2( 58.8235, 146.324 )
 scale = Vector2( 0.176471, 0.176471 )
 
 [node name="Pintu Gereja" type="StaticBody2D" parent="." groups=[
@@ -258,4 +273,44 @@ scale = Vector2( 0.999999, 0.999999 )
 shape = SubResource( 5 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color( 0.0862745, 0.0862745, 0.0862745, 1 )
+color = Color( 0.0392157, 0.027451, 0.027451, 1 )
+
+[node name="Limit" type="StaticBody2D" parent="."]
+position = Vector2( 183.961, -10.2389 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limit"]
+shape = SubResource( 6 )
+
+[node name="Limit2" type="StaticBody2D" parent="."]
+position = Vector2( -10.4802, 117.534 )
+scale = Vector2( 1, 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limit2"]
+shape = SubResource( 7 )
+
+[node name="Limit3" type="StaticBody2D" parent="."]
+position = Vector2( 148.309, 230.521 )
+scale = Vector2( 1, 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limit3"]
+shape = SubResource( 6 )
+
+[node name="Limit4" type="StaticBody2D" parent="."]
+position = Vector2( -7.62229, -18.4001 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Limit4"]
+position = Vector2( 17.3498, 5.38475 )
+scale = Vector2( 0.727789, 0.815227 )
+polygon = PoolVector2Array( -25.3698, -13.5385, 40.5332, -13.4301, 42.091, -1.7372, 41.1701, -13.4014, 41.0782, -15.883, -30.0615, -15.883, -29.9696, 18.0324, -25.364, 18.7076, -12.8559, 18.7521, -25.4659, 18.3082 )

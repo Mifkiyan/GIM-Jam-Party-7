@@ -1,0 +1,101 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1643552267.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1643552267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You are finally here… Yes… just like what Charon had foretold!"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Excuse me, may I know who you are?"
+		},
+		{
+			"character": "character-1643552267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh I am of no importance, my child! What matters is you are here! You will finally stop all the madness that is plaguing us all!"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Then tell me what I should do! Me and Rian, we cannot stand this madness anymore!"
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1643552267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A long time ago…people would perform rituals here to satisfy Charon, the demon god that the villagers had a pact to."
+		},
+		{
+			"character": "character-1643552267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Charon himself whispered to me…on the last ritual, your ancestor ran away, and thus he cursed all the descendants of this village."
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 1
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This village might have died, but the candles that should have been lit on that day still remain. Bring me 6 of the candles scattered throughout the village. Then I should tell you what you should do next."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1643993340.json",
+		"name": "Church 1"
+	}
+}
