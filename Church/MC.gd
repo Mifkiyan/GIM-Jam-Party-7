@@ -57,12 +57,13 @@ func Interact():
 		$InteractArea/CollisionShape2D.disabled = false
 
 func _on_InteractArea_body_entered(body):
-	if body.is_in_group("Pintu Gereja"):
-		var d = Dialogic.start("Pilihan masuk gereja")
+	if body.is_in_group("Jalan Keluar"):
+		var d = Dialogic.start("Pilihan keluar gereja")
 		d.pause_mode = PAUSE_MODE_PROCESS
 		get_parent().call_deferred('add_child', d)
 		d.connect("timeline_end",self,"after_dialog")
 		get_tree().paused = true
-
+		
+		
 func after_dialog(timeline_name):
 	get_tree().paused = false

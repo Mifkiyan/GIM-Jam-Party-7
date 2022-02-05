@@ -15,19 +15,29 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 12 ) ],
+"loop": true,
+"name": "Kiri",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 10 ) ],
 "loop": true,
 "name": "Kanan diem",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
-"name": "Belakang",
+"name": "Kanan",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ), ExtResource( 1 ) ],
 "loop": true,
 "name": "Depan",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Belakang",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 2 ) ],
@@ -43,16 +53,6 @@ animations = [ {
 "frames": [ ExtResource( 11 ) ],
 "loop": true,
 "name": "Belakang diem",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 12 ) ],
-"loop": true,
-"name": "Kiri",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 3 ) ],
-"loop": true,
-"name": "Kanan",
 "speed": 5.0
 } ]
 

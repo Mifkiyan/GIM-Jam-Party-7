@@ -107,7 +107,7 @@
 			"text": "Thus, with the help of the documents I found in my father’s room, I went to the village. To find out the truth."
 		},
 		{
-			"change_scene": "res://World.tscn",
+			"change_scene": "res://VillageFirst/World.tscn",
 			"event_id": "dialogic_041"
 		}
 	],

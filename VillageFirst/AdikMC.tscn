@@ -7,7 +7,7 @@
 [ext_resource path="res://Sprites/karakter adik mc/depan 1.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/karakter adik mc/belakang 1.png" type="Texture" id=6]
 [ext_resource path="res://FollowLimit.gd" type="Script" id=7]
-[ext_resource path="res://Village/AdikMC.gd" type="Script" id=8]
+[ext_resource path="res://VillageFirst/AdikMC.gd" type="Script" id=8]
 [ext_resource path="res://Sprites/karakter adik mc/samping kiri.png" type="Texture" id=9]
 [ext_resource path="res://Sprites/karakter adik mc/samping kanan.png" type="Texture" id=10]
 [ext_resource path="res://Sprites/karakter adik mc/belakang.png" type="Texture" id=11]

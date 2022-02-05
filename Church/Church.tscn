@@ -1,13 +1,16 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=19 format=2]
 
-[ext_resource path="res://Visual Arts/Church/goat statue.png" type="Texture" id=1]
+[ext_resource path="res://Church/GoatStatue.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Visual Arts/Church/wooden floor.png" type="Texture" id=2]
-[ext_resource path="res://Visual Arts/Church/altar.png" type="Texture" id=3]
+[ext_resource path="res://Church/Church.gd" type="Script" id=3]
 [ext_resource path="res://Visual Arts/Church/stone bg.png" type="Texture" id=4]
 [ext_resource path="res://Church/Podium.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Church/MC.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Church/Chair.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Church/AdikMC.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Church/Granny.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Church/Altar.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Visual Arts/Church/small window.png" type="Texture" id=11]
 
 [sub_resource type="TileSet" id=1]
 0/name = "wooden floor.png 0"
@@ -55,31 +58,79 @@
 0/shapes = [  ]
 0/z_index = 0
 
-[sub_resource type="CapsuleShape2D" id=3]
-radius = 12.0
-height = 0.0
+[sub_resource type="TileSet" id=6]
+0/name = "stone bg.png 0"
+0/texture = ExtResource( 4 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 16, 3 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "stone bg.png 1"
+1/texture = ExtResource( 4 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 16, 0, 16, 3 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
 
-[sub_resource type="CapsuleShape2D" id=4]
-radius = 7.0
-height = 10.0
+[sub_resource type="TileSet" id=7]
+0/name = "small window.png 0"
+0/texture = ExtResource( 11 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 12, 0, 3, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="SegmentShape2D" id=3]
+a = Vector2( -0.124227, -0.0420685 )
+b = Vector2( -0.0762529, 260.602 )
+
+[sub_resource type="SegmentShape2D" id=4]
+a = Vector2( 224.984, -1.45048 )
+b = Vector2( 0.0642309, -1.39976 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 31.9758, 11.3054 )
 
 [node name="Church" type="YSort"]
 position = Vector2( 6.36395, 67.8823 )
+script = ExtResource( 3 )
 
-[node name="MC" parent="." groups=[
-"MC",
-] instance=ExtResource( 6 )]
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 113.509, 108.987 )
+current = true
+zoom = Vector2( 0.5, 0.5 )
+
+[node name="MC" parent="." instance=ExtResource( 6 )]
 position = Vector2( 111.264, 231.623 )
 scale = Vector2( 2.56, 2.56 )
 
-[node name="Camera2D" type="Camera2D" parent="MC"]
-scale = Vector2( 0.390625, 0.390625 )
-current = true
-zoom = Vector2( 0.2, 0.2 )
-limit_left = 10
-limit_top = 30
-limit_right = 225
-limit_bottom = 317
+[node name="Granny" parent="." instance=ExtResource( 9 )]
+position = Vector2( 149.78, 46.7767 )
+scale = Vector2( 0.378335, 0.378335 )
 
 [node name="AdikMC" parent="." instance=ExtResource( 8 )]
 position = Vector2( 97.2913, 246.53 )
@@ -96,23 +147,25 @@ tile_data = PoolIntArray( -131072, 1, 0, -131071, 1, 0, -131070, 1, 0, -131069, 
 tile_set = SubResource( 2 )
 cell_size = Vector2( 3, 32 )
 format = 1
-tile_data = PoolIntArray( 0, 0, 0, 74, 0, 0, 65536, 0, 0, 65610, 0, 0, 131072, 0, 0, 131146, 0, 0, 196608, 0, 0, 196682, 0, 0, 262144, 0, 0, 262218, 0, 0, 327680, 0, 0, 327754, 0, 0, 393216, 0, 0, 393290, 0, 0, 458752, 0, 0, 458826, 0, 0 )
+tile_data = PoolIntArray( 0, 0, 0, 74, 0, 0, 65536, 0, 0, 65610, 0, 0, 196608, 0, 0, 196682, 0, 0, 262144, 0, 0, 262218, 0, 0, 393216, 0, 0, 393290, 0, 0, 458752, 0, 0, 458826, 0, 0 )
 
-[node name="Altar" type="Sprite" parent="."]
-position = Vector2( 114, 55 )
-texture = ExtResource( 3 )
+[node name="Wall2" type="TileMap" parent="."]
+tile_set = SubResource( 6 )
+cell_size = Vector2( 16, 3 )
+format = 1
+tile_data = PoolIntArray( 5570560, 0, 0, 5570561, 1, 0, 5570562, 0, 0, 5570563, 1, 0, 5570564, 0, 0, 5570569, 1, 0, 5570570, 0, 0, 5570571, 1, 0, 5570572, 0, 0, 5570573, 1, 0 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Altar"]
-position = Vector2( 0, 4 )
-shape = SubResource( 3 )
+[node name="Window" type="TileMap" parent="."]
+tile_set = SubResource( 7 )
+cell_size = Vector2( 3, 32 )
+format = 1
+tile_data = PoolIntArray( 131072, 0, 0, 131146, 0, 0, 327680, 0, 0, 327754, 0, 0 )
 
-[node name="GoatStatue" type="Sprite" parent="."]
-position = Vector2( 112, 16 )
-texture = ExtResource( 1 )
+[node name="Altar" parent="." instance=ExtResource( 10 )]
+position = Vector2( 113.509, 68.26 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="GoatStatue"]
-position = Vector2( 0, 5 )
-shape = SubResource( 4 )
+[node name="GoatStatue" parent="." instance=ExtResource( 1 )]
+position = Vector2( 113.509, 30.15 )
 
 [node name="Chair" parent="." instance=ExtResource( 7 )]
 position = Vector2( 65.6408, 118.058 )
@@ -169,3 +222,32 @@ scale = Vector2( 1.08, 1.68733 )
 [node name="Podium8" parent="." instance=ExtResource( 5 )]
 position = Vector2( 206.648, 139.976 )
 scale = Vector2( 1.08, 1.68733 )
+
+[node name="Limit" type="StaticBody2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limit"]
+position = Vector2( 1.5892, -4.23785 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Limit"]
+position = Vector2( 223.675, -1.72048 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Limit"]
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Limit"]
+position = Vector2( 0.316528, 258.193 )
+shape = SubResource( 4 )
+
+[node name="Pintu" type="StaticBody2D" parent="." groups=[
+"Jalan Keluar",
+]]
+position = Vector2( 112.052, 267.057 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pintu"]
+shape = SubResource( 5 )

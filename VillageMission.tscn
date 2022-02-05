@@ -1,22 +1,22 @@
 [gd_scene load_steps=21 format=2]
 
-[ext_resource path="res://Village/AdikMC.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Village/House.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Visual Arts/Village/asset church.png" type="Texture" id=4]
-[ext_resource path="res://Visual Arts/Village/bg ground.png" type="Texture" id=5]
-[ext_resource path="res://Village/Tombstone1.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Village/Tombstone2.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Visual Arts/Village/asset tree2.png" type="Texture" id=8]
-[ext_resource path="res://Visual Arts/Village/asset tree1.png" type="Texture" id=9]
-[ext_resource path="res://Visual Arts/Map/asset icon river.png" type="Texture" id=10]
-[ext_resource path="res://Village/MC.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Village/Pohon1.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Village/Pohon2.tscn" type="PackedScene" id=13]
-[ext_resource path="res://World.gd" type="Script" id=16]
+[ext_resource path="res://VillageFirst/House.tscn" type="PackedScene" id=1]
+[ext_resource path="res://VillageFirst/AdikMC.tscn" type="PackedScene" id=2]
+[ext_resource path="res://VillageFirst/Pohon1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://VillageFirst/Pohon2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://VillageFirst/Tombstone1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://VillageFirst/MC.tscn" type="PackedScene" id=6]
+[ext_resource path="res://VillageFirst/Tombstone2.tscn" type="PackedScene" id=7]
+[ext_resource path="res://VillageMission.gd" type="Script" id=8]
+[ext_resource path="res://Visual Arts/Village/asset tree2.png" type="Texture" id=9]
+[ext_resource path="res://Visual Arts/Village/asset church.png" type="Texture" id=10]
+[ext_resource path="res://Visual Arts/Village/bg ground.png" type="Texture" id=11]
+[ext_resource path="res://Visual Arts/Village/asset tree1.png" type="Texture" id=12]
+[ext_resource path="res://Visual Arts/Map/asset icon river.png" type="Texture" id=13]
 
 [sub_resource type="TileSet" id=1]
 1/name = "bg ground.png 1"
-1/texture = ExtResource( 5 )
+1/texture = ExtResource( 11 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 0, 0, 32, 32 )
@@ -32,7 +32,7 @@
 
 [sub_resource type="TileSet" id=2]
 0/name = "asset tree2.png 0"
-0/texture = ExtResource( 8 )
+0/texture = ExtResource( 9 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( -1, -1, 27, 30 )
@@ -48,7 +48,7 @@
 
 [sub_resource type="TileSet" id=3]
 0/name = "asset tree1.png 0"
-0/texture = ExtResource( 9 )
+0/texture = ExtResource( 12 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( -1, -1, 23, 26 )
@@ -74,14 +74,14 @@ extents = Vector2( 149.494, 10 )
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 10, 117.363 )
 
-[node name="World" type="YSort"]
+[node name="VillageMission" type="YSort"]
 scale = Vector2( 1.36, 1.36 )
-script = ExtResource( 16 )
+script = ExtResource( 8 )
 
 [node name="MC" parent="." groups=[
 "MC",
-] instance=ExtResource( 11 )]
-position = Vector2( 24.7551, 3.82614 )
+] instance=ExtResource( 6 )]
+position = Vector2( 208.54, 138.891 )
 
 [node name="Camera2D" type="Camera2D" parent="MC"]
 current = true
@@ -92,8 +92,8 @@ limit_right = 500
 limit_bottom = 315
 limit_smoothed = true
 
-[node name="AdikMC" parent="." instance=ExtResource( 1 )]
-position = Vector2( 15.1448, 1.70317 )
+[node name="AdikMC" parent="." instance=ExtResource( 2 )]
+position = Vector2( 202.288, 136.189 )
 scale = Vector2( 0.981417, 1 )
 
 [node name="BG" type="TileMap" parent="."]
@@ -125,7 +125,7 @@ z_index = -1
 [node name="Sprite" type="Sprite" parent="River"]
 position = Vector2( -6.10352e-05, -2.28882e-05 )
 scale = Vector2( 5.06284, 8.52825 )
-texture = ExtResource( 10 )
+texture = ExtResource( 13 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="River"]
 polygon = PoolVector2Array( 2.48196, -104.792, 2.51962, -100.018, 6.20029, -98.6681, 6.17053, -75.666, 11.0523, -73.7073, 11.1416, -20.1367, 4.71466, -17.0206, 5.88321, 29.7204, 6.29407, 56.012, 0.451447, 58.3491, -0.522339, 65.3602, -4.80692, 68.2815, -5.3912, 74.3189, -10.4548, 77.8245, -10.1431, 91.5989, -15.5799, 93.7982, -16.6511, 99.6408, -23.6622, 107.334, -32.913, 116, -33.0209, 122.307, 37.8792, 122.69, 37.8115, -105.215 )
@@ -139,119 +139,119 @@ __meta__ = {
 
 [node name="Church" type="Sprite" parent="Church"]
 scale = Vector2( 2.06826, 2.06826 )
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Church"]
 position = Vector2( 0, 6.66295 )
 scale = Vector2( 2.06826, 2.06826 )
 shape = SubResource( 4 )
 
-[node name="House" parent="." instance=ExtResource( 3 )]
+[node name="House" parent="." instance=ExtResource( 1 )]
 position = Vector2( 115.091, 59.159 )
 
-[node name="House2" parent="." instance=ExtResource( 3 )]
+[node name="House2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 299.276, 82.7231 )
 
-[node name="House3" parent="." instance=ExtResource( 3 )]
+[node name="House3" parent="." instance=ExtResource( 1 )]
 position = Vector2( 222.604, 15.0863 )
 
-[node name="House4" parent="." instance=ExtResource( 3 )]
+[node name="House4" parent="." instance=ExtResource( 1 )]
 position = Vector2( 154.352, 194.414 )
 
-[node name="Pohon6" parent="." instance=ExtResource( 12 )]
+[node name="Pohon6" parent="." instance=ExtResource( 3 )]
 position = Vector2( 178.433, 72.8471 )
 scale = Vector2( 0.617647, 1 )
 
-[node name="Pohon7" parent="." instance=ExtResource( 12 )]
+[node name="Pohon7" parent="." instance=ExtResource( 3 )]
 position = Vector2( 230.819, 71.7396 )
 scale = Vector2( 0.647059, 0.962745 )
 
-[node name="House5" parent="." instance=ExtResource( 3 )]
+[node name="House5" parent="." instance=ExtResource( 1 )]
 position = Vector2( 263.747, 200.649 )
 
-[node name="Pohon2" parent="." instance=ExtResource( 13 )]
+[node name="Pohon2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 107.802, 129.755 )
 
-[node name="Pohon22" parent="." instance=ExtResource( 13 )]
+[node name="Pohon22" parent="." instance=ExtResource( 4 )]
 position = Vector2( 274.901, 102.489 )
 
-[node name="Pohon16" parent="." instance=ExtResource( 13 )]
+[node name="Pohon16" parent="." instance=ExtResource( 4 )]
 position = Vector2( 152.595, 33.1569 )
 scale = Vector2( 0.823529, 0.794118 )
 
-[node name="Pohon17" parent="." instance=ExtResource( 13 )]
+[node name="Pohon17" parent="." instance=ExtResource( 4 )]
 position = Vector2( 293.597, 206.099 )
 scale = Vector2( 0.823529, 0.794118 )
 
-[node name="Pohon18" parent="." instance=ExtResource( 13 )]
+[node name="Pohon18" parent="." instance=ExtResource( 4 )]
 position = Vector2( 290.481, 36.2729 )
 scale = Vector2( 0.823529, 0.794118 )
 
-[node name="Pohon19" parent="." instance=ExtResource( 13 )]
+[node name="Pohon19" parent="." instance=ExtResource( 4 )]
 position = Vector2( 260.879, 16.0185 )
 scale = Vector2( 0.823529, 0.794118 )
 
-[node name="Pohon20" parent="." instance=ExtResource( 13 )]
+[node name="Pohon20" parent="." instance=ExtResource( 4 )]
 position = Vector2( 314.631, 22.2506 )
 scale = Vector2( 0.823529, 0.794118 )
 
-[node name="Pohon21" parent="." instance=ExtResource( 13 )]
+[node name="Pohon21" parent="." instance=ExtResource( 4 )]
 position = Vector2( 74.6938, 189.35 )
 scale = Vector2( 0.823529, 0.794118 )
 
-[node name="Pohon1" parent="." instance=ExtResource( 12 )]
+[node name="Pohon1" parent="." instance=ExtResource( 3 )]
 position = Vector2( 99.4473, 78.1666 )
 scale = Vector2( 0.345566, 0.538275 )
 
-[node name="Pohon8" parent="." instance=ExtResource( 12 )]
+[node name="Pohon8" parent="." instance=ExtResource( 3 )]
 position = Vector2( 239.804, 32.0619 )
 scale = Vector2( 0.345566, 0.538275 )
 
-[node name="Pohon10" parent="." instance=ExtResource( 12 )]
+[node name="Pohon10" parent="." instance=ExtResource( 3 )]
 position = Vector2( 277.446, 71.1633 )
 scale = Vector2( 0.345566, 0.538275 )
 
-[node name="Pohon14" parent="." instance=ExtResource( 12 )]
+[node name="Pohon14" parent="." instance=ExtResource( 3 )]
 position = Vector2( 174.44, 211.52 )
 scale = Vector2( 0.345566, 0.538275 )
 
-[node name="Pohon15" parent="." instance=ExtResource( 12 )]
+[node name="Pohon15" parent="." instance=ExtResource( 3 )]
 position = Vector2( 184.362, 187.009 )
 scale = Vector2( 0.345566, 0.538275 )
 
-[node name="Pohon11" parent="." instance=ExtResource( 12 )]
+[node name="Pohon11" parent="." instance=ExtResource( 3 )]
 position = Vector2( 294.079, 62.9929 )
 scale = Vector2( 0.345566, 0.538275 )
 
-[node name="Pohon13" parent="." instance=ExtResource( 12 )]
+[node name="Pohon13" parent="." instance=ExtResource( 3 )]
 position = Vector2( 250.892, 179.422 )
 scale = Vector2( 0.345566, 0.538275 )
 
-[node name="Pohon12" parent="." instance=ExtResource( 12 )]
+[node name="Pohon12" parent="." instance=ExtResource( 3 )]
 position = Vector2( 280.948, 189.635 )
 scale = Vector2( 0.345566, 0.538275 )
 
-[node name="Pohon9" parent="." instance=ExtResource( 12 )]
+[node name="Pohon9" parent="." instance=ExtResource( 3 )]
 position = Vector2( 205.663, 10.7604 )
 scale = Vector2( 0.345566, 0.538275 )
 
-[node name="Pohon3" parent="." instance=ExtResource( 13 )]
+[node name="Pohon3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 156.085, 135.767 )
 scale = Vector2( 0.652174, 0.750006 )
 
-[node name="Pohon4" parent="." instance=ExtResource( 13 )]
+[node name="Pohon4" parent="." instance=ExtResource( 4 )]
 position = Vector2( 248.451, 137.732 )
 scale = Vector2( 0.652174, 0.750006 )
 
-[node name="Pohon5" parent="." instance=ExtResource( 13 )]
+[node name="Pohon5" parent="." instance=ExtResource( 4 )]
 position = Vector2( 205.216, 169.503 )
 scale = Vector2( 0.652174, 0.750006 )
 
-[node name="Tombstone1" parent="." instance=ExtResource( 6 )]
+[node name="Tombstone1" parent="." instance=ExtResource( 5 )]
 position = Vector2( 45.5882, 146.324 )
 scale = Vector2( 0.176471, 0.176471 )
 
-[node name="Tombstone2" parent="." instance=ExtResource( 6 )]
+[node name="Tombstone2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 52.2059, 153.676 )
 scale = Vector2( 0.176471, 0.176471 )
 
@@ -272,6 +272,7 @@ scale = Vector2( 0.999999, 0.999999 )
 shape = SubResource( 5 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 color = Color( 0.0392157, 0.027451, 0.027451, 1 )
 
 [node name="Limit" type="StaticBody2D" parent="."]

@@ -1,0 +1,85 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey sis… do you remember when father started screaming in his bed?"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah… He always talked in his sleep, but it was shortly after mother passed away that he started screaming in his sleep."
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Could it be that he had the same dream like we do now?"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I.. don’t know. He never said anything to us about the nightmare he was having."
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "...Hey Rian."
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes sis?"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Take my hand.. It’s dark here."
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh.. okay!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1644087379.json",
+		"name": "House 1"
+	}
+}
