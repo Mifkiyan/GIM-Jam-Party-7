@@ -58,7 +58,7 @@
 0/shapes = [  ]
 0/z_index = 0
 
-[sub_resource type="TileSet" id=6]
+[sub_resource type="TileSet" id=3]
 0/name = "stone bg.png 0"
 0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
@@ -88,7 +88,7 @@
 1/shapes = [  ]
 1/z_index = 0
 
-[sub_resource type="TileSet" id=7]
+[sub_resource type="TileSet" id=4]
 0/name = "small window.png 0"
 0/texture = ExtResource( 11 )
 0/tex_offset = Vector2( 0, 0 )
@@ -104,15 +104,15 @@
 0/shapes = [  ]
 0/z_index = 0
 
-[sub_resource type="SegmentShape2D" id=3]
+[sub_resource type="SegmentShape2D" id=5]
 a = Vector2( -0.124227, -0.0420685 )
 b = Vector2( -0.0762529, 260.602 )
 
-[sub_resource type="SegmentShape2D" id=4]
+[sub_resource type="SegmentShape2D" id=6]
 a = Vector2( 224.984, -1.45048 )
 b = Vector2( 0.0642309, -1.39976 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 31.9758, 11.3054 )
 
 [node name="Church" type="YSort"]
@@ -150,13 +150,13 @@ format = 1
 tile_data = PoolIntArray( 0, 0, 0, 74, 0, 0, 65536, 0, 0, 65610, 0, 0, 196608, 0, 0, 196682, 0, 0, 262144, 0, 0, 262218, 0, 0, 393216, 0, 0, 393290, 0, 0, 458752, 0, 0, 458826, 0, 0 )
 
 [node name="Wall2" type="TileMap" parent="."]
-tile_set = SubResource( 6 )
+tile_set = SubResource( 3 )
 cell_size = Vector2( 16, 3 )
 format = 1
 tile_data = PoolIntArray( 5570560, 0, 0, 5570561, 1, 0, 5570562, 0, 0, 5570563, 1, 0, 5570564, 0, 0, 5570569, 1, 0, 5570570, 0, 0, 5570571, 1, 0, 5570572, 0, 0, 5570573, 1, 0 )
 
 [node name="Window" type="TileMap" parent="."]
-tile_set = SubResource( 7 )
+tile_set = SubResource( 4 )
 cell_size = Vector2( 3, 32 )
 format = 1
 tile_data = PoolIntArray( 131072, 0, 0, 131146, 0, 0, 327680, 0, 0, 327754, 0, 0 )
@@ -228,18 +228,18 @@ visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limit"]
 position = Vector2( 1.5892, -4.23785 )
-shape = SubResource( 3 )
+shape = SubResource( 5 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Limit"]
 position = Vector2( 223.675, -1.72048 )
-shape = SubResource( 3 )
+shape = SubResource( 5 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Limit"]
-shape = SubResource( 4 )
+shape = SubResource( 6 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Limit"]
 position = Vector2( 0.316528, 258.193 )
-shape = SubResource( 4 )
+shape = SubResource( 6 )
 
 [node name="Pintu" type="StaticBody2D" parent="." groups=[
 "Jalan Keluar",
@@ -250,4 +250,4 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pintu"]
-shape = SubResource( 5 )
+shape = SubResource( 7 )

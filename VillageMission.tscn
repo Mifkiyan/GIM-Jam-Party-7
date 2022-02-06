@@ -272,7 +272,6 @@ scale = Vector2( 0.999999, 0.999999 )
 shape = SubResource( 5 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 color = Color( 0.0392157, 0.027451, 0.027451, 1 )
 
 [node name="Limit" type="StaticBody2D" parent="."]
