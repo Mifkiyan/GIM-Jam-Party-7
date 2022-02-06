@@ -1,0 +1,374 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You Found A Candle!"
+		},
+		{
+			"action": "join",
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"condition": "",
+			"definition": "1644136218-751",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey sis… do you remember when father started screaming in his bed?"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah… He always talked in his sleep, but it was shortly after mother passed away that he started screaming in his sleep."
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Could it be that he had the same dream like we do now?"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I.. don’t know. He never said anything to us about the nightmare he was having."
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "...Hey Rian."
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes sis?"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Take my hand.. It’s dark here."
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh.. okay!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1644136218-751",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey sis… do you feel like you’re being watched too?"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Y.. yes I do. I can feel something is following us in the corner of my eyes."
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Can we just go home? I don’t like this place at all."
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bear with it just for a little longer. I promise we will go home together after this is all over alright? No more nightmares, no more sightings."
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Alright.. Hey sis?"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes?"
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Stay close to me, please."
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I will, don't worry."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1644136218-751",
+			"event_id": "dialogic_012",
+			"value": "2"
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey sis… I’m starving."
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah, same here. Tell you what, after we go home from this village, why don’t we grab your favorite burger downtown?"
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh oh! Can I get french fries too???"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Of course!"
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And ice cream too?"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well, there goes a week worth of saving."
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You can have my french fries too!"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Haha alright! Let’s find all the candles quickly so we can get out of here soon!"
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1644136218-751",
+			"event_id": "dialogic_012",
+			"value": "3"
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I wonder why we need to collect all these candles."
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But that grandma told us to do so."
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I don’t know, sis… I have a bad feeling about this."
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "...But we have no choice but to believe what grandma says. She’s the only one we can rely on for now."
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But the ritual… Do we really need to do it, sis?"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We have to. Otherwise, this curse will never end and we will never know the truth."
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "...Sis?"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah?"
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No matter what happens, please don’t ever leave me."
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That’s the last thing I would do, Rian. Cmon, Let’s get out of here."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1644136218-751",
+			"event_id": "dialogic_012",
+			"value": "4"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/Footstep.mp3",
+			"volume": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 4
+		},
+		{
+			"audio": "stop",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "",
+			"volume": 0
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "R-Rian… Do you hear that?"
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Y..yeah. But I don’t think I saw anybody else besides that old woman."
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So what was that?"
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..I had no idea."
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sis?"
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah?"
+		},
+		{
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I don’t think it’s a great idea if we stay here for a bit longer."
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I think so too. We already got the candle right? We better get out of here."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"definition": "1644136218-751",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1644139803.json",
+		"name": "House"
+	}
+}

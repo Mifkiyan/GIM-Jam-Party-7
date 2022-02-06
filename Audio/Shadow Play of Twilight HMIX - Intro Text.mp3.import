@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Shadow Play of Twilight HMIX - Intro Text.mp3-e087c1c98994a6df84349fb0fdaa9901.mp3str"
+
+[deps]
+
+source_file="res://Audio/Shadow Play of Twilight HMIX - Intro Text.mp3"
+dest_files=[ "res://.import/Shadow Play of Twilight HMIX - Intro Text.mp3-e087c1c98994a6df84349fb0fdaa9901.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

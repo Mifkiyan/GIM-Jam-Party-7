@@ -1,0 +1,104 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Exit house?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 1
+		},
+		{
+			"condition": "",
+			"definition": "1644134818-951",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"change_scene": "res://VillageMission/VillageMission1.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1644134818-951",
+			"event_id": "dialogic_012",
+			"value": "2"
+		},
+		{
+			"change_scene": "res://VillageMission/VillageMission2.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1644134818-951",
+			"event_id": "dialogic_012",
+			"value": "3"
+		},
+		{
+			"change_scene": "res://VillageMission/VillageMission3.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1644134818-951",
+			"event_id": "dialogic_012",
+			"value": "4"
+		},
+		{
+			"change_scene": "res://VillageMission/VillageMission4.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1644134818-951",
+			"event_id": "dialogic_012",
+			"value": "5"
+		},
+		{
+			"change_scene": "res://VillageMission/VillageMission5.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1644129198.json",
+		"name": "Pilihan keluar rumah"
+	}
+}

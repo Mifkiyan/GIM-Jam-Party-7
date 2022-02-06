@@ -3,6 +3,53 @@
 
 	],
 	"variables": [
-
+		{
+			"id": "1644147255-614",
+			"name": "House2",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1644147260-199",
+			"name": "House3",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1644134818-951",
+			"name": "House",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1644134428-720",
+			"name": "Gereja Intro",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1644136218-751",
+			"name": "Candle",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1644147245-790",
+			"name": "House1",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1644147263-721",
+			"name": "House4",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1644147267-383",
+			"name": "House5",
+			"type": 0,
+			"value": "0"
+		}
 	]
 }

@@ -1,0 +1,74 @@
+{
+	"events": [
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 3,
+			"file": "res://Audio/Blue Moon HMIX - Ending Text.mp3",
+			"volume": -15
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1643560778.cfg"
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 1
+		},
+		{
+			"action": "join",
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I swung the axe to his neck. As his blood splashes onto the floor, the six candles burned down."
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It was over. The old lady was nowhere to be found… and what was Rian lies on the floor. "
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I left him there. The nightmares and sightings will finally be over. Under the moonless night sky, I absent-mindedly made my way home."
+		},
+		{
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "In the corner of my eyes, and in my sleep, Rian will always be there to haunt me."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You have finished the game.\nThank you for playing."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1644159614.json",
+		"name": "Ending Rian"
+	}
+}

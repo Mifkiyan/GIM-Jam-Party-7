@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Black Cloud Oveture HMIX - Gereja Ritual.mp3-b04e46783e52ed806e05c388ebc25791.mp3str"
+
+[deps]
+
+source_file="res://Audio/Black Cloud Oveture HMIX - Gereja Ritual.mp3"
+dest_files=[ "res://.import/Black Cloud Oveture HMIX - Gereja Ritual.mp3-b04e46783e52ed806e05c388ebc25791.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

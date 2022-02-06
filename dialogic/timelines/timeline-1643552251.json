@@ -44,7 +44,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Use WASD/Arrow Keys to move, ENTER to interact."
+			"text": "Use WASD/Arrow Keys to move, ENTER to interact or enter a building."
 		}
 	],
 	"metadata": {

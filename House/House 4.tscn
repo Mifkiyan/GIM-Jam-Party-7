@@ -1,0 +1,204 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://Visual Arts/Village/bg ground.png" type="Texture" id=1]
+[ext_resource path="res://Visual Arts/Houses/asset drawer.png" type="Texture" id=2]
+[ext_resource path="res://Visual Arts/Houses/asset pillow.png" type="Texture" id=3]
+[ext_resource path="res://Visual Arts/Houses/asset alas lesehan.png" type="Texture" id=4]
+[ext_resource path="res://Dinding2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Visual Arts/Houses/asset alas tidur.png" type="Texture" id=6]
+[ext_resource path="res://House/House4.gd" type="Script" id=7]
+[ext_resource path="res://House/Door.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Dinding1.tscn" type="PackedScene" id=9]
+[ext_resource path="res://House/AdikMC.gd" type="Script" id=10]
+[ext_resource path="res://House/MC.gd" type="Script" id=11]
+[ext_resource path="res://VillageMission/MC.tscn" type="PackedScene" id=12]
+[ext_resource path="res://VillageFirst/AdikMC.tscn" type="PackedScene" id=14]
+[ext_resource path="res://House/CandleHouse4.gd" type="Script" id=15]
+[ext_resource path="res://House/Camera2D.tscn" type="PackedScene" id=16]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 13.7143, 5.57143 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 14.888, 5.75195 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 0.779778, 3.36492 )
+
+[sub_resource type="TileSet" id=4]
+0/name = "bg ground.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="SegmentShape2D" id=5]
+b = Vector2( -0.0645523, 66.0872 )
+
+[sub_resource type="SegmentShape2D" id=6]
+a = Vector2( 0.0271835, 2.42707 )
+b = Vector2( 66.7243, 2.50582 )
+
+[node name="House 4" type="YSort"]
+script = ExtResource( 7 )
+
+[node name="Camera2D" parent="." instance=ExtResource( 16 )]
+position = Vector2( 30.9377, 32.429 )
+
+[node name="AdikMC" parent="." instance=ExtResource( 14 )]
+pause_mode = 2
+position = Vector2( 25.3489, 7.85343 )
+z_index = 4
+script = ExtResource( 10 )
+
+[node name="MC" parent="." instance=ExtResource( 12 )]
+position = Vector2( 30.3814, 11.9589 )
+z_index = 4
+script = ExtResource( 11 )
+
+[node name="Drawer1" type="StaticBody2D" parent="."]
+
+[node name="AssetDrawer" type="Sprite" parent="Drawer1"]
+position = Vector2( 47, 61 )
+scale = Vector2( 0.4375, 0.269231 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Drawer1"]
+position = Vector2( 47, 61.5 )
+scale = Vector2( 0.4375, 0.269231 )
+shape = SubResource( 1 )
+
+[node name="Drawer2" type="StaticBody2D" parent="."]
+
+[node name="AssetDrawer2" type="Sprite" parent="Drawer2"]
+position = Vector2( 57.6682, 8.45223 )
+rotation = -2.61663
+scale = Vector2( 0.4375, 0.269231 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Drawer2"]
+position = Vector2( 58.0938, 7.80358 )
+rotation = -2.61663
+scale = Vector2( 0.4375, 0.269231 )
+shape = SubResource( 2 )
+
+[node name="Drawer3" type="StaticBody2D" parent="."]
+script = ExtResource( 15 )
+
+[node name="AssetDrawer3" type="Sprite" parent="Drawer3"]
+position = Vector2( 63, 49 )
+rotation = -1.5599
+scale = Vector2( 0.4375, 0.269231 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Drawer3"]
+position = Vector2( 63.6812, 49.1895 )
+rotation = -1.5599
+scale = Vector2( 0.4375, 0.269231 )
+shape = SubResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="Drawer3"]
+position = Vector2( 63.4049, 48.5548 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Drawer3/Area2D"]
+shape = SubResource( 3 )
+
+[node name="AssetAlasTidur" type="Sprite" parent="."]
+position = Vector2( 11, 19 )
+rotation = 1.92946
+scale = Vector2( 0.55, 0.642857 )
+texture = ExtResource( 6 )
+
+[node name="AssetPillow" type="Sprite" parent="AssetAlasTidur"]
+position = Vector2( -3.34938, 7.98157 )
+rotation = 0.912884
+scale = Vector2( 0.300847, 0.22787 )
+texture = ExtResource( 3 )
+
+[node name="AssetAlasTidur2" type="Sprite" parent="."]
+position = Vector2( 21, 55 )
+rotation = 1.09972
+scale = Vector2( 0.55, 0.642857 )
+texture = ExtResource( 6 )
+
+[node name="AssetPillow" type="Sprite" parent="AssetAlasTidur2"]
+position = Vector2( -1.80499, -10.1502 )
+scale = Vector2( 0.29872, 0.214988 )
+texture = ExtResource( 3 )
+
+[node name="AssetAlasTidur3" type="Sprite" parent="."]
+position = Vector2( 10, 39 )
+rotation = 0.389185
+scale = Vector2( 0.55, 0.642857 )
+texture = ExtResource( 6 )
+
+[node name="AssetPillow" type="Sprite" parent="AssetAlasTidur3"]
+position = Vector2( -2.98828, 9.45313 )
+scale = Vector2( 0.332761, 0.196876 )
+texture = ExtResource( 3 )
+
+[node name="AssetAlasLesehan" type="Sprite" parent="."]
+position = Vector2( 42.6023, 34.4255 )
+rotation = 0.665634
+scale = Vector2( 0.834642, 1.2296 )
+texture = ExtResource( 4 )
+
+[node name="AssetPillow" type="Sprite" parent="AssetAlasLesehan"]
+position = Vector2( 8.5925, 6.88696 )
+scale = Vector2( 0.210192, 0.247875 )
+texture = ExtResource( 3 )
+
+[node name="AssetPillow2" type="Sprite" parent="AssetAlasLesehan"]
+position = Vector2( -12.6065, -6.99314 )
+scale = Vector2( 0.195586, 0.297065 )
+texture = ExtResource( 3 )
+
+[node name="Lantai" type="TileMap" parent="."]
+z_index = -5
+tile_set = SubResource( 4 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 65536, 0, 0, 65537, 0, 0 )
+
+[node name="Dinding1" parent="." instance=ExtResource( 9 )]
+z_index = 5
+
+[node name="Dinding2" parent="." instance=ExtResource( 5 )]
+z_index = 2
+
+[node name="Door" parent="." instance=ExtResource( 8 )]
+position = Vector2( 26.4998, 1.8624 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0, 0, 0, 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 64.817, 0 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 0, -0.31498 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1.05112, 60.8602 )
+shape = SubResource( 6 )
+
+[connection signal="area_entered" from="Drawer3/Area2D" to="Drawer3" method="_on_Area2D_area_entered"]

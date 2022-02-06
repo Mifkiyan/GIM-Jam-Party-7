@@ -1,6 +1,7 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://VillageFirst/AdikMC.tscn" type="PackedScene" id=1]
+[ext_resource path="res://VillageHouseBG.tscn" type="PackedScene" id=2]
 [ext_resource path="res://VillageFirst/House.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Visual Arts/Village/asset church.png" type="Texture" id=4]
 [ext_resource path="res://Visual Arts/Village/bg ground.png" type="Texture" id=5]
@@ -311,3 +312,10 @@ __meta__ = {
 position = Vector2( 17.3498, 5.38475 )
 scale = Vector2( 0.727789, 0.815227 )
 polygon = PoolVector2Array( -25.3698, -13.5385, 40.5332, -13.4301, 42.091, -1.7372, 41.1701, -13.4014, 41.0782, -15.883, -30.0615, -15.883, -29.9696, 18.0324, -25.364, 18.7076, -12.8559, 18.7521, -25.4659, 18.3082 )
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource( 2 )]
+
+[node name="Audio" parent="AudioStreamPlayer" index="0"]
+autoplay = true
+
+[editable path="AudioStreamPlayer"]

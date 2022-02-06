@@ -1,6 +1,15 @@
 {
 	"events": [
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://Audio/Shadow Play of Twilight HMIX - Intro Text.mp3",
+			"volume": 0
+		},
+		{
 			"event_id": "dialogic_024",
 			"set_theme": "theme-1643559246.cfg"
 		},

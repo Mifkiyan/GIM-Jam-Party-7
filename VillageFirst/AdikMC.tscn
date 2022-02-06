@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Sprites/karakter adik mc/depan 2.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/karakter adik mc/depan.png" type="Texture" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://Sprites/karakter adik mc/belakang 2.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/karakter adik mc/depan 1.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/karakter adik mc/belakang 1.png" type="Texture" id=6]
-[ext_resource path="res://FollowLimit.gd" type="Script" id=7]
 [ext_resource path="res://VillageFirst/AdikMC.gd" type="Script" id=8]
 [ext_resource path="res://Sprites/karakter adik mc/samping kiri.png" type="Texture" id=9]
 [ext_resource path="res://Sprites/karakter adik mc/samping kanan.png" type="Texture" id=10]
@@ -25,19 +24,9 @@ animations = [ {
 "name": "Kiri",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 11 ) ],
-"loop": true,
-"name": "Belakang diem",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 5 ), ExtResource( 1 ) ],
 "loop": true,
 "name": "Depan",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 3 ) ],
-"loop": true,
-"name": "Kanan",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 6 ), ExtResource( 4 ) ],
@@ -45,14 +34,24 @@ animations = [ {
 "name": "Belakang",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ) ],
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
-"name": "Depan diem",
+"name": "Kanan",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 9 ) ],
 "loop": true,
 "name": "Kiri diem",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "Belakang diem",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Depan diem",
 "speed": 5.0
 } ]
 
@@ -80,7 +79,6 @@ shape = SubResource( 2 )
 
 [node name="FollowLimit" type="Area2D" parent="."]
 position = Vector2( 0, -2 )
-script = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true
 }

@@ -1,0 +1,60 @@
+{
+	"events": [
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://Audio/Blue Moon HMIX - Ending Text.mp3",
+			"volume": -15
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1643560778.cfg"
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 1
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The boy swung the axe to his sister’s neck. As her blood splashes onto the floor, the six candles burned down. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It was over. The old lady was nowhere to be found, and what was his sister lies on the floor."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " The boy absent-mindedly walked away, not knowing the path to his home. As the boy grew hungrier, the night grew more and more darker."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "As the boy finally collapses, he sees the silhouette of his sister for the last time."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You have finished the game. \nThank you for playing."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1644160047.json",
+		"name": "Ending Rena"
+	}
+}

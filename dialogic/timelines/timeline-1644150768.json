@@ -1,0 +1,104 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1643552260.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1643552263.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1643552267.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"condition": "<",
+			"definition": "1644136218-751",
+			"event_id": "dialogic_012",
+			"value": "6"
+		},
+		{
+			"character": "character-1643552267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bring me 6 of the candles scattered throughout the village. Then I should tell you what you should do next."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": ">=",
+			"definition": "1644136218-751",
+			"event_id": "dialogic_012",
+			"value": "6"
+		},
+		{
+			"character": "character-1643552267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I see you have returned with all of the 6 candles. Come, place them here."
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "stop",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
+		},
+		{
+			"character": "character-1643552267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Good, now let me tell you about the ritual."
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 0.5
+		},
+		{
+			"change_scene": "res://ChurchDone/ChurchWithCandleOn.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1644150768.json",
+		"name": "Church Done"
+	}
+}

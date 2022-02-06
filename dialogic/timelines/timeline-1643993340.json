@@ -91,6 +91,14 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "This village might have died, but the candles that should have been lit on that day still remain. Bring me 6 of the candles scattered throughout the village. Then I should tell you what you should do next."
+		},
+		{
+			"definition": "1644134428-720",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
 		}
 	],
 	"metadata": {

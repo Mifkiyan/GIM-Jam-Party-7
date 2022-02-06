@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Death in London HMIX - Gereja intro.mp3-177dbeb8e7e69734b3dbfeadd596965d.mp3str"
+
+[deps]
+
+source_file="res://Audio/Death in London HMIX - Gereja intro.mp3"
+dest_files=[ "res://.import/Death in London HMIX - Gereja intro.mp3-177dbeb8e7e69734b3dbfeadd596965d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

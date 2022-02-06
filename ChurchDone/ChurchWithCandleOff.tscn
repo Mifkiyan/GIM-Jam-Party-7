@@ -1,0 +1,301 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://Visual Arts/Church/wooden floor.png" type="Texture" id=1]
+[ext_resource path="res://Visual Arts/Church/stone bg.png" type="Texture" id=2]
+[ext_resource path="res://Visual Arts/Church/small window.png" type="Texture" id=3]
+[ext_resource path="res://Audio/Death in London HMIX - Gereja intro.mp3" type="AudioStream" id=4]
+[ext_resource path="res://Visual Arts/Items/asset candle off.png" type="Texture" id=5]
+[ext_resource path="res://ChurchIntro/Granny.tscn" type="PackedScene" id=6]
+[ext_resource path="res://ChurchIntro/Altar.tscn" type="PackedScene" id=7]
+[ext_resource path="res://ChurchIntro/Podium.tscn" type="PackedScene" id=8]
+[ext_resource path="res://ChurchIntro/Chair.tscn" type="PackedScene" id=9]
+[ext_resource path="res://ChurchIntro/MC.tscn" type="PackedScene" id=10]
+[ext_resource path="res://ChurchIntro/GoatStatue.tscn" type="PackedScene" id=11]
+[ext_resource path="res://ChurchIntro/AdikMC.tscn" type="PackedScene" id=12]
+[ext_resource path="res://ChurchDone/ChurchWithCandleOff.gd" type="Script" id=13]
+[ext_resource path="res://ChurchDone/Granny.gd" type="Script" id=14]
+
+[sub_resource type="TileSet" id=1]
+0/name = "wooden floor.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "stone bg.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 32, 32 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+
+[sub_resource type="TileSet" id=2]
+0/name = "stone bg.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 3, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=3]
+0/name = "stone bg.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 16, 3 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "stone bg.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 16, 0, 16, 3 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+
+[sub_resource type="TileSet" id=4]
+0/name = "small window.png 0"
+0/texture = ExtResource( 3 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 12, 0, 3, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="SegmentShape2D" id=5]
+a = Vector2( -0.124227, -0.0420685 )
+b = Vector2( -0.0762529, 260.602 )
+
+[sub_resource type="SegmentShape2D" id=6]
+a = Vector2( 224.984, -1.45048 )
+b = Vector2( 0.0642309, -1.39976 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 31.9758, 11.3054 )
+
+[node name="Church" type="YSort"]
+position = Vector2( 6.36395, 67.8823 )
+script = ExtResource( 13 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 113.509, 108.987 )
+current = true
+zoom = Vector2( 0.5, 0.5 )
+
+[node name="MC" parent="." instance=ExtResource( 10 )]
+position = Vector2( 111.264, 231.623 )
+scale = Vector2( 2.56, 2.56 )
+
+[node name="Granny" parent="." instance=ExtResource( 6 )]
+pause_mode = 2
+position = Vector2( 113.699, 48.1131 )
+scale = Vector2( 0.378335, 0.378335 )
+script = ExtResource( 14 )
+
+[node name="CollisionShape2D" parent="Granny/Area2D" index="0"]
+position = Vector2( -0.660767, 46.5954 )
+
+[node name="AdikMC" parent="." instance=ExtResource( 12 )]
+position = Vector2( 97.2913, 246.53 )
+scale = Vector2( 2.56, 2.56 )
+
+[node name="Lantai" type="TileMap" parent="."]
+show_behind_parent = true
+tile_set = SubResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -131072, 1, 0, -131071, 1, 0, -131070, 1, 0, -131069, 1, 0, -131068, 1, 0, -131067, 1, 0, -131066, 1, 0, -65536, 1, 0, -65535, 1, 0, -65534, 1, 0, -65533, 1, 0, -65532, 1, 0, -65531, 1, 0, -65530, 1, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0 )
+
+[node name="Wall1" type="TileMap" parent="."]
+tile_set = SubResource( 2 )
+cell_size = Vector2( 3, 32 )
+format = 1
+tile_data = PoolIntArray( 0, 0, 0, 74, 0, 0, 65536, 0, 0, 65610, 0, 0, 196608, 0, 0, 196682, 0, 0, 262144, 0, 0, 262218, 0, 0, 393216, 0, 0, 393290, 0, 0, 458752, 0, 0, 458826, 0, 0 )
+
+[node name="Wall2" type="TileMap" parent="."]
+tile_set = SubResource( 3 )
+cell_size = Vector2( 16, 3 )
+format = 1
+tile_data = PoolIntArray( 5570560, 0, 0, 5570561, 1, 0, 5570562, 0, 0, 5570563, 1, 0, 5570564, 0, 0, 5570569, 1, 0, 5570570, 0, 0, 5570571, 1, 0, 5570572, 0, 0, 5570573, 1, 0 )
+
+[node name="Window" type="TileMap" parent="."]
+tile_set = SubResource( 4 )
+cell_size = Vector2( 3, 32 )
+format = 1
+tile_data = PoolIntArray( 131072, 0, 0, 131146, 0, 0, 327680, 0, 0, 327754, 0, 0 )
+
+[node name="Altar" parent="." instance=ExtResource( 7 )]
+position = Vector2( 113.509, 68.26 )
+
+[node name="GoatStatue" parent="." instance=ExtResource( 11 )]
+position = Vector2( 113.509, 30.15 )
+
+[node name="Chair" parent="." instance=ExtResource( 9 )]
+position = Vector2( 65.6408, 118.058 )
+scale = Vector2( 0.800001, 0.800001 )
+
+[node name="Chair2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 65.6386, 150.514 )
+scale = Vector2( 0.800001, 0.800001 )
+
+[node name="Chair3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 65.475, 182.525 )
+scale = Vector2( 0.800001, 0.800001 )
+
+[node name="Chair4" parent="." instance=ExtResource( 9 )]
+position = Vector2( 161.978, 117.454 )
+scale = Vector2( 0.800001, 0.800001 )
+
+[node name="Chair5" parent="." instance=ExtResource( 9 )]
+position = Vector2( 161.976, 149.91 )
+scale = Vector2( 0.800001, 0.800001 )
+
+[node name="Chair6" parent="." instance=ExtResource( 9 )]
+position = Vector2( 161.812, 181.921 )
+scale = Vector2( 0.800001, 0.800001 )
+
+[node name="Podium" parent="." instance=ExtResource( 8 )]
+position = Vector2( 17.7526, 7.54063 )
+scale = Vector2( 1.08, 1.68733 )
+
+[node name="Podium2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 17.753, 75.745 )
+scale = Vector2( 1.08, 1.68733 )
+
+[node name="Podium3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 17.753, 204.335 )
+scale = Vector2( 1.08, 1.68733 )
+
+[node name="Podium4" parent="." instance=ExtResource( 8 )]
+position = Vector2( 17.753, 139.976 )
+scale = Vector2( 1.08, 1.68733 )
+
+[node name="Podium5" parent="." instance=ExtResource( 8 )]
+position = Vector2( 205.941, 7.541 )
+scale = Vector2( 1.08, 1.68733 )
+
+[node name="Podium6" parent="." instance=ExtResource( 8 )]
+position = Vector2( 206.648, 75.745 )
+scale = Vector2( 1.08, 1.68733 )
+
+[node name="Podium7" parent="." instance=ExtResource( 8 )]
+position = Vector2( 206.648, 204.335 )
+scale = Vector2( 1.08, 1.68733 )
+
+[node name="Podium8" parent="." instance=ExtResource( 8 )]
+position = Vector2( 206.648, 139.976 )
+scale = Vector2( 1.08, 1.68733 )
+
+[node name="Limit" type="StaticBody2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limit"]
+position = Vector2( 1.5892, -4.23785 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Limit"]
+position = Vector2( 223.675, -1.72048 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Limit"]
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Limit"]
+position = Vector2( 0.316528, 258.193 )
+shape = SubResource( 6 )
+
+[node name="Pintu" type="StaticBody2D" parent="." groups=[
+"Jalan Keluar",
+]]
+position = Vector2( 112.052, 267.057 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pintu"]
+shape = SubResource( 7 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 4 )
+volume_db = -15.0
+
+[node name="asset candle off1" type="Sprite" parent="."]
+position = Vector2( 173.53, 53.7141 )
+scale = Vector2( 0.688185, 0.688185 )
+texture = ExtResource( 5 )
+
+[node name="asset candle off2" type="Sprite" parent="."]
+position = Vector2( 159.986, 62.5336 )
+scale = Vector2( 0.688185, 0.688185 )
+texture = ExtResource( 5 )
+
+[node name="asset candle off3" type="Sprite" parent="."]
+position = Vector2( 147.072, 74.0303 )
+scale = Vector2( 0.688185, 0.688185 )
+texture = ExtResource( 5 )
+
+[node name="asset candle off4" type="Sprite" parent="."]
+position = Vector2( 58.247, 53.714 )
+scale = Vector2( 0.688185, 0.688185 )
+texture = ExtResource( 5 )
+
+[node name="asset candle off5" type="Sprite" parent="."]
+position = Vector2( 71.004, 62.534 )
+scale = Vector2( 0.688185, 0.688185 )
+texture = ExtResource( 5 )
+
+[node name="asset candle off6" type="Sprite" parent="."]
+position = Vector2( 82.816, 74.03 )
+scale = Vector2( 0.688185, 0.688185 )
+texture = ExtResource( 5 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0.176471, 0.176471, 0.176471, 1 )
+
+[editable path="Granny"]
